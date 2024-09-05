@@ -1,0 +1,63 @@
+{
+  "name": "vscode config",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/java": {
+      "version": "21",
+      "installMaven": true,
+      "installGradle": true,
+      "installSpringBoot": true,
+      "mavenVersion": "3.9.6"
+    },
+    "ghcr.io/devcontainers/features/node": {
+      "version": "lts",
+      "installYarn": true
+    },
+    "ghcr.io/devcontainers/features/python": {
+      "version": "3.12.0",
+      "installJupyter": true,
+      "installPipx": true,
+      "additionalPackages": [
+        "flask",
+        "gunicorn"
+      ]
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "redhat.java",
+        "ms-python.python",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-spring-initializr",
+        "redhat.vscode-yaml",
+        "42Crunch.vscode-openapi",
+        "GitHub.vscode-pull-request-github",
+        "GitHub.vscode-codeql",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "mhutchie.git-graph",
+        "42Crunch.vscode-openapi"
+      ]
+    }
+  },
+  "workspaceFolder": "/workspaces/devcontainers-workshop",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/devcontainers-workshop,type=bind,consistency=cached",
+  "containerEnv": {
+    "GHP_USER": "${localEnv:GHP_USER}",
+    "GHP_TOKEN": "${localEnv:GHP_TOKEN}",
+    "ARTIFACTORY_URL": "https://artifactory.azure.dsb.dk/artifactory/api/pypi/pypi-local",
+    "ARTIFACTORY_USERNAME": "${localEnv:ARTIFACTORY_USERNAME}",
+    "ARTIFACTORY_PASSWORD": "${localEnv:ARTIFACTORY_PASSWORD}"
+  }
+}
