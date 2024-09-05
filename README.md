@@ -162,7 +162,7 @@ Overall, there are many ways to customize a Devcontainer to meet your specific n
 
 - [Developing inside a Container - Visual Studio Code](https://code.visualstudio.com/docs/remote/containers)
 - [Devcontainers - GitHub](https://github.com/devcontainers)
-- [Jetbrains Gateway - Jetbrains](https://www.jetbrains.com/help/idea/remote-development.html)
+- [Jetbrains Gateway - Jetbrains](https://www.jetbrains.com/help/idea)
 - [Devcontainers Reference Docs](https://containers.dev)
 
 [^1]: IntelliJ Idea also has a plugin for working with Devcontainers. You can find more information about the plugin in the official documentation: [https://plugins.jetbrains.com/plugin/14890-devcontainers](https://plugins.jetbrains.com/plugin/14890-devcontainers)
