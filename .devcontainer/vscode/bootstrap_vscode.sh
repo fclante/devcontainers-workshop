@@ -1,6 +1,7 @@
 #!/bin/bash
 
 python3 -m pip install --upgrade build \
+
 && python3 -m pip install twine \
 && python3 -m pip install poetry \
 && sudo mkdir -p /workspaces/devcontainers-workshop \

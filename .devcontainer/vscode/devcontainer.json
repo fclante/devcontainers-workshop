@@ -59,6 +59,5 @@
     "ARTIFACTORY_URL": "https://artifactory.azure.dsb.dk/artifactory/api/pypi/pypi-local",
     "ARTIFACTORY_USERNAME": "${localEnv:ARTIFACTORY_USERNAME}",
     "ARTIFACTORY_PASSWORD": "${localEnv:ARTIFACTORY_PASSWORD}"
-  },
-  "postStartCommand": ". src/bootstrap_vscode.sh"
+  }
 }
